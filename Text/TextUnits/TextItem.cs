@@ -3,16 +3,18 @@ using System.Collections.ObjectModel;
 using Text.Interface;
 
 namespace Text.TextUnits
-{
-    public abstract class TextItem : ITextItem
+{   
+        public abstract class TextItem : ITextItem
     {
         public List<Symbol> chars = new List<Symbol>();
 
-        public ReadOnlyCollection<Symbol> Chars
-        {
-            get { return new ReadOnlyCollection<Symbol>(chars); }
-        }
-
+//public ReadOnlyCollection<Symbol> Chars
+//    {
+//        get
+//        {
+//            return new ReadOnlyCollection<Symbol>(chars);
+//        }
+//    }
         public int Lenght
         {
             get  { return chars.Count; }

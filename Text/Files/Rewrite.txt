@@ -1,1 +1,2 @@
-﻿
+It is expected for you to have basic computer literacy, since we would not be explaining what a file, hard disk and network adapter is, nor how to move the mouse or how to write on a keyboard. We expect you to know how to work with a computer and how to use the Internet. It is recommended that the readers have at least some basic knowledge of English. The entire documentation you will be using every day and almost all of the websites on programming you would be reading at all times are in English. In the profession of a programmer, English is absolutely essential. The sooner you learn it, the better. We hope that you already speak English, otherwise how do you read this text?
+

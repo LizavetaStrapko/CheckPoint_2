@@ -8,19 +8,15 @@ namespace Text.TextUnits
 {
     public enum TypeSent
     {
-        Voprositelnoe,
-        Voskli,
-        Pobudit,
-        Povest
+        Interrogative,
+        Exclamatory,
+        Declarative
     }
 
     public class Sentence
     {
         private List<ITextItem> elementsOfText = new List<ITextItem>();
-
-        public Sentence()
-        { }
-
+        
         public Sentence(List<ITextItem> elementsOfText)
         {
             this.elementsOfText = elementsOfText;
@@ -45,10 +41,10 @@ namespace Text.TextUnits
             {
                 switch (elementsOfText.Last().ToString())
                 {
-                    case ".": return TypeSent.Povest;
-                    case "!": return TypeSent.Voskli;
-                    case "?": return TypeSent.Voprositelnoe;
-                    default: return TypeSent.Povest;
+                    case ".": return TypeSent.Declarative;
+                    case "!": return TypeSent.Exclamatory;
+                    case "?": return TypeSent.Interrogative;
+                    default: return TypeSent.Declarative;
                 }
             }
         }

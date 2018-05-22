@@ -5,7 +5,7 @@ namespace Text.Interface
 {
     public interface ITextItem
     {
-        ReadOnlyCollection<Symbol> Chars { get; }
+        //ReadOnlyCollection<Symbol> Chars { get; }
 
         int Lenght { get; }
 

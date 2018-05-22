@@ -11,22 +11,18 @@ namespace Text.TextUnits
     {
         List<Sentence> sentences = new List<Sentence>();
 
-        public Texts()
-        {
-        }
-
         public Texts(List<Sentence> sentences)
         {
             this.sentences = sentences;
         }
 
-        public ReadOnlyCollection<Sentence> Sentences
-        {
-            get
-            {
-                return new ReadOnlyCollection<Sentence>(sentences);
-            }
-        }
+        //public ReadOnlyCollection<Sentence> Sentences
+        //{
+        //    get
+        //    {
+        //        return new ReadOnlyCollection<Sentence>(sentences);
+        //    }
+        //}
 
         public List<Sentence> GetListOfSentByNumOfWord()
         {

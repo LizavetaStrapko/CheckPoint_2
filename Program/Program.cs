@@ -38,7 +38,7 @@ namespace Program
 
                     Console.WriteLine("---------Words by length from interrogative sentence-----------\n\n");
 
-                    foreach (var item in text.GetListWordsInSent(2, TypeSent.Voprositelnoe))
+                    foreach (var item in text.GetListWordsInSent(2, TypeSent.Interrogative))
                     {
                         Console.WriteLine(item);
                     }
@@ -56,6 +56,10 @@ namespace Program
                     text.ReplacementWordsInSent(1, 3, "It's a substring");
 
                     Console.WriteLine(text);
+
+                    using (StreamWriter sw = new StreamWriter(writePath))
+
+                    { sw.WriteLine(f); }
                 }
             }
 
@@ -64,12 +68,9 @@ namespace Program
                 Console.WriteLine("The process failed: {0}", e);
             }
 
-
-
             Console.ReadKey();
         }
-       
+
     }
 }
 
-            

@@ -8,9 +8,8 @@ namespace Text.TextUnits
 {
     public class PunctuationMark : TextItem, IPunctuationMark
     {
-        public PunctuationMark()
-        { }
-
+        //public PunctuationMark()
+        //{ }
         public PunctuationMark(List<Symbol> symbols)
         {
             if (Separators.InnerSentenceSeparators.Contains(symbols.Last().Value.ToString()) || Separators.SentenceSeparators.Contains(symbols.Last().Value.ToString()))
